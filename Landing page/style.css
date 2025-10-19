@@ -1,0 +1,40 @@
+
+body{
+        font-size: 18px;
+    }
+
+.copy{
+    text-align: center;
+    justify-content: center;
+}
+
+.btn1{
+    background-color: aquamarine;
+    border: 1px;
+}
+
+.btn2{
+    background-color: rgba(110, 55, 236, 0.986);
+}
+
+.track{
+  text-align: center;
+}
+
+.comp{
+    text-align: center;
+    justify-content: center;
+}
+
+img{
+    text-align: left;
+    justify-content: left;
+}
+
+.access{
+    text-align: center;
+    }
+    
+.workflow{
+    text-align: center;
+}
