@@ -1,23 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 body{
+    height: 100vh;
     background-image: url("loginbg.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
 }
 .login{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 40px;
-    margin-top:40px ;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    max-width: 500px;
-    background-color: #f18888;
+    text-align: center;
+    padding: 37px 40px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 12px 30px rgba(25, 30, 35, 0.12);
+    gap: 16px;
+    width: 560px;
+    max-width: 95%;
+
+
 }
+
+.login .logo-img{
+    width: 120px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 4px;
+
+}
+
 form{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    gap: 12x;
+    width: 100%;
 
 }
 .input{
@@ -27,14 +54,84 @@ form{
     align-items: center;
     border-radius: 20px;
     padding: 20px;
-    gap: 10px;
+    gap: 12px;
+}
+.input input[type="text"],
+.input input[type="password"]{
+    width: 230%;
+    padding: 12px 14px;
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0,0.08);
+    background:#e9f0fb;
+    color:#222;
+    font-size: 14px;
+    outline: none;
+    transition: box-shadow .12s, border-color .12s;
 }
 .btn1, .btn2{
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    font-family: sans-serif;
+    font-size: medium;
+    font-weight: bold;
+
+}
+
+.btn1{
     background-color: rgb(29, 138, 29);
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(29,138,29,0.12);
+}
+.btn2{
+    background-color: #cfd6d9;
+    color: #2b2b2b;
 }
 .password-lost{
+margin: 6px 0 8px;
 
+}
+
+.password-lost a{
+    color: #168a3a;
+    text-decoration: none;
+    font-size: 13px;
+
+}
+
+.password-lost a:hover{
+    text-decoration: underline;
+}
+
+.cookies{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color:#1b8a3b;
+    margin-top: 8px;
+}
+.cookies a{
+    text-decoration: none;
+    font-size: 13px;
+}
+@media (max-width: 420px){
+    .login{
+        padding: 20px;
+
+    }
+    .login .logo img{
+        width:96px;
+    }
+    .btn1, .btn2{
+        padding: 10px;
+    }
 }
