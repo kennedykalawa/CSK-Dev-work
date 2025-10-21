@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kirinyaga University | Masomo</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* White background with fading black edge */
+      background: radial-gradient(circle, white 60%, #000 100%);
+    }
+    .container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      width: 320px;
+      text-align: center;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    }
+    .timeout {
+      background-color: brown;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    input {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #333;
+      border-radius: 5px;
+    }
+    button {
+      width: 95%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: white;
+      margin-top: 10px;
+    }
+    .login-btn {
+      background-color: green;
+    }
+    .guest-btn {
+      background-color: #333;
+    }
+    a {
+      color: green;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="./logo.png" alt="Kirinyaga University Logo" style="width: 140px; margin-bottom: 20px;">
+    
+    <form>
+      <input type="text" placeholder="Username"><br>
+      <input type="password" placeholder="Password"><br>
+      <button type="button" class="login-btn">Log in</button>
+    </form>
+
+    <p><a href="#">Lost password?</a></p>
+    <button type="button" class="guest-btn">Access as a guest</button>
+    <p><a href="#">Cookies notice</a></p>
+  </div>
+
+</body>
+</html>
