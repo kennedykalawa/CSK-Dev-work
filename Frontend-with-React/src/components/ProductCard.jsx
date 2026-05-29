@@ -1,14 +1,12 @@
-import react_image from '../assets/react.svg'
-
-const ProductCard = () => {
+const ProductCard = ({ title, description, price, image }) => {
     return (
-        <div>
-          <img src={react_image} alt="react logo" className='product-image' />
-          <h2 className='product-title'>React</h2>
-          <p className='product-description'>A JavaScript library for building user interfaces.</p> 
-          <p className='product-price'>$0.00</p>        
-        </div>
-    )
-}
+        <article className="product-card">
+            <img src={image} alt={title} className="product-image" />
+            <h2 className="product-title">{title}</h2>
+            <p className="product-description">{description}</p>
+            <p className="product-price">${price.toFixed(2)}</p>
+        </article>
+    );
+};
 
-export default ProductCard
+export default ProductCard;
